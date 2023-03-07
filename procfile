@@ -1,0 +1,1 @@
+web: gunicorn organisermangementapp.wsgi --log-file -

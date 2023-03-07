@@ -1,0 +1,619 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title> MDF </title>
+    <!-- Stylesheets -->
+
+
+	<!-- jquery -->
+	<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href='{% static "stylescss/responsive.css" %}'>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    	<link rel="stylesheet" href='{% static "styles/bootstrap.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/style.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/revolution-slider.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/animate.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/font-awesome.css" %}'>
+         <link rel="stylesheet" href='{% static "styles/owl.css" %}'>
+          <link rel="stylesheet" href='{% static "styles/responsive.css" %}'>
+
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+    <!--Page Wrapper-->  
+    <div class="page-wrapper">   
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!--Header top area-->
+        <header class="main-header header-style-one">
+            <section class="header-top">
+                <div class="container">  
+                    <div class="header">
+                        <div class="header-top-left">
+                            <ul>
+                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                        </div>
+                        <div class="header-top-right">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> mannersdevelopementfoundation@gmail.com</a></li>
+                                <li><p><i class="fa fa-phone" aria-hidden="true"></i>+234-803 3083 888, +234-809 2211 445</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/header_top_area-->
+
+            <!--/Header Top-->
+            <section class="mainmenu-area">
+                <div class="container">
+                 <div class="logo pull-left">
+                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown"><a href="{% url 'home'%}">Home</a></li>
+                            <li class="dropdown"><a href="#">Activities</a>
+                                <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                              <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+
+
+
+                        </ul>
+                        <ul class="mobile-menu clearfix">
+
+                            <li class="current dropdown"><a href="index.html">Home</a></li>
+                            <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                        <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                </div>
+            </section>
+            <!--Main-Mane-->
+            <section class="bounce-in-header">
+                <div class="container">
+                 <div class="logo pull-left">
+                    <a href="index.html"><img src="{%static 'images/logo.png'%}"  alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown"><a href="{% url 'home' %}">Home</a></li>
+                             <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="{%url 'post_onlinelearning' %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+
+                        <ul class="mobile-menu clearfix">
+
+                            <li class="current dropdown"><a href="{%url 'home' %}">Home</a>
+
+                            </li>
+
+
+
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
+            </section>
+            <!--/Main-Menu-->
+        </header>
+        <!-- ================================= Banner ====================== -->
+		<section class="main-slider">
+                <div class="tp-banner-container">
+                    <div class="tp-banner" >
+                        <ul>
+                            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="static/images/slider/1.jpg"  data-saveperformance="off"  data-title="Awsome Service">
+                            <img src="{% static 'images/slider/1.jpg' %}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-100"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="grey-title"></div></div>
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-40"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="white-title"><h2 style="text-align: center;">INTERNALLY DISPLACED <br> PEOPLE (IDP)</h2></div></div>
+
+                            <div class="tp-caption lfr tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="50"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="grey-title"><p><br>
+                                <p></div></div>
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="100"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="grey-title"></div></div>
+                            <div class="tp-caption lfr tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="400"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
+                              <div class="container">
+                                <div class="slider-box  wow fadeInUp animated">
+                                    <div class="slider-item">
+                                                                            
+                                   
+                                </div>
+                                </div>  
+                            </div>
+                            
+                            </li>
+                            <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1000" data-thumb="static/images/gallery/borehole.jpeg"  data-saveperformance="off"  data-title="Professional Mechanics">
+                            <img src="{% static 'images/gallery/borehole.jpeg' }"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption lft tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-100"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="grey-title"><h4>we are determined to change other life</h4></div></div>
+
+
+                            <div class="tp-caption lfb tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-40"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="white-title"><h2>Boreholes for deprived Areas</h2></div></div>
+                            <div class="tp-caption lfr tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="50"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"></div>
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="100"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"></div>
+                            </li>
+                            <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="static/images/gallery/school.jpeg"  data-saveperformance="off"  data-title="Awsome Service">
+                            <img src="{%static 'images/gallery/school.jpeg' }"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-100"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="grey-title"><h4>Thousand of children are waiting for help!</h4></div></div>
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-40"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="grey-title"><h2>out of <span>SCHOOL</span> CHILDREN</h2></div></div>
+
+                            <div class="tp-caption lfr tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="50"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"></div>
+                            <div class="tp-caption lfl tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="100"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"></div>
+                            <div class="tp-caption lfr tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="400"
+                            data-speed="1500"
+                            data-start="500"
+                            data-easing="easeOutExpo"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.3"
+                            data-endspeed="1200"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
+                              <div class="container">
+                                <div class="slider-bar  wow fadeInUp animated">
+                                    <div class="img-box">
+                                        
+                                    </div>
+                                    <div class="text">
+                                    </div>
+                                   
+                                    </div>
+                                </div>
+                                </div>  
+                            </div>                        
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer"></div>
+
+                    </div>
+                </div>
+            
+		</section>
+
+	<!-- ====================== /Banner =================== -->
+        <!--.welcome-seciton-->
+        <section class="welcome-seciton">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6>HELP to THE poor People</h6>
+                    <h2>Recent <span>Causes</span></h2>
+                    <p>Here are some causes or projects we've embarked on.</p>
+                </div><br> 
+                        
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="welcome-item">
+                            <div class="img-holder">
+                               <figure><a href="single-causes.html"><img  src="{% static 'images/gallery/hair.jpeg' %}"  alt="Images"></a></figure>
+                                <!-- Start overlay -->
+                                <div class="overlay">
+                                    <h4><a href="single-causes.html">Hairdressing & Barbing Training</a></h4>
+                                </div>
+                                <!-- End overlay -->   
+                            </div>
+                            <div class="text">
+                                
+                                <p>Intensive training by MDF  prodigious trainees on hand-on skills like hairdressing, barbing, 
+                                    computer training, carpentry and other entrepreneurship skills.</p>
+                                
+                            </div>
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="welcome-item">
+                            <div class="img-holder">
+                               <figure><a href="single-causes.html"><img  src="{% static 'images/gallery/borehole.jpeg' %}"  alt="Images"></a></figure>
+                                <!-- Start overlay -->
+                                <div class="overlay">
+                                    <h4><a href="single-causes.html">DRILLING OF BOREHOLES</span></a></h4>
+                                </div>
+                                <!-- End overlay -->
+                            </div>
+                            <div class="text">
+                               
+                                <p> Construction of borehole and water pumps for deprived communities. 
+                                    The boreholes is estimated at $ 3,845 each.
+                                </p>
+                               
+                            </div>
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="welcome-item">
+                            <div class="img-holder">
+                               <figure><a href="single-causes.html"><img src="{% static 'images/gallery/items.jpeg' %}" alt="Images"></a></figure>
+                                <!-- Start overlay -->
+                                <div class="overlay">
+                                    <h4><a href="single-causes.html">Donations</span></a></h4>
+                                </div>
+                                <!-- End overlay -->
+                            </div>
+                            <div class="text">
+                                
+                                <p>Donation of stationaries to those interested in becoming hairdressers 
+                                    and barbers. Items required to start up little businesses are provided.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="welcome-item">
+                            <div class="img-holder">
+                               <figure><a href="single-causes.html"><img src="{% static 'images/gallery/farm.jpeg' %}" alt="Images"></a></figure>
+                                <!-- Start overlay -->
+                                <div class="overlay">
+                                    <h4><a href="single-causes.html">Agricultural Training</span></a></h4>
+                                </div>
+                                <!-- End overlay -->
+                            </div>
+                            <div class="text">
+                                <div class="pro-text">
+                                    
+                                <p>This is part of the objectives of MDF, it includes the provision 
+                                    several agricultural equipments, skills, 
+                                    training in crop production, fish and livestock farming. 
+                                    Participants will have seamless access to loan after undergoing training. </p>
+
+                            </div>
+                        </div>
+                        <!-- End single-item -->
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <h5 class="button" style="text-align: center;"><a href="causes.html">See More Causes</a></h5>        
+        
+        </section>
+
+        <!--/wellcome-seciton-->
+        <!--.helping-seciton-->
+        <section class="helping-seciton" style="background-image:url(static/images/gallery/school.jpeg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <div class="text">
+                            <h2>OUT OF SCHOOL CHILDREN</h2>
+                            <p>MDF works so hard to return children back 
+                                to school to acquire more skills and educational knowledge. 
+                                This method will not only add  value to their lives but also make them resourceful 
+                                leaders now and in the future. </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <!-- video-preview start -->
+                        <div class="video-preview" style="background-image:url(static/images/blog/bg3.jpg);">
+                            <ul class="v-container text-center">
+                                <li>
+                                    <a href="https://youtu.be/hl2yYBmHS90" class="html5lightbox"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="https://youtu.be/hl2yYBmHS90" class="html5lightbox" id="watch-video"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- video-preview end -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/helping-seciton-->
+
+        <!--.footer-section-->
+        <footer class="footer-section widget">
+            <div class="container ">
+                
+                    <div class="footer-item">
+                        
+                        
+                            
+                                <h2>Information</h2>
+                                
+                                <h5><i class="fa fa-map-marker" aria-hidden="true"></i> No.24 Matadi Street, Zone 3 , Wuse.Abuja  </h5>
+                                <h5><i class="fa fa-map-marker" aria-hidden="true"></i> No.89, Randle Avenue Surulere. Lagos.  </h5>
+                                <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>mannersdevelopementfoundation@gmail.com</h5>
+                                <h5><i class="fa fa-phone" aria-hidden="true"></i>+234-8033083888, +234-8092211445</h5>
+                            
+                        
+
+                        
+                    </div>
+                
+            </div>
+        <div class="footer-bottom">
+            <p><span><a target="_blank" href="index.html">Manners Development Foundation</a></span> </p>
+        </div>
+    </footer>
+    <!--/footer-section-->
+
+    </div>
+    <!--Page Wrapper End-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'js/isotope.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/html5lightbox/html5lightbox.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/validate.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/revolution.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,613 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title> MDF </title>
+    <!-- Stylesheets -->
+
+
+	<!-- jquery -->
+	<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href='{% static "stylescss/responsive.css" %}'>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    	<link rel="stylesheet" href='{% static "styles/bootstrap.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/style.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/revolution-slider.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/animate.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/font-awesome.css" %}'>
+         <link rel="stylesheet" href='{% static "styles/owl.css" %}'>
+          <link rel="stylesheet" href='{% static "styles/responsive.css" %}'>
+
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!--Header top area-->
+        <header class="main-header header-style-one">
+            <section class="header-top">
+                <div class="container">  
+                    <div class="header">
+                        <div class="header-top-left">
+                            <ul>
+                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                        </div>
+                        <div class="header-top-right">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> mannersdevelopementfoundation@gmail.com</a></li>
+                                <li><p><i class="fa fa-phone" aria-hidden="true"></i>+234-803 3083 888, +234-809 2211 445</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/header_top_area-->
+
+            <!--/Header Top-->
+            <section class="mainmenu-area">
+                <div class="container">
+                 <div class="logo pull-left">
+                  <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li ><a href="{% url 'home'%}">Home</a></li>
+                            <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                              <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li class="current dropdown"><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+
+
+
+                        </ul>
+                        <ul class="mobile-menu clearfix">
+
+                            <li ><a href="{%url 'home'%}">Home</a></li>
+                            <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                        <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                </div>
+            </section>
+            <!--Main-Mane-->
+            <section class="bounce-in-header">
+                <div class="container">
+                 <div class="logo pull-left">
+                    <a href="index.html"><img src="{%static 'images/logo.png'%}"  alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown"><a href="{% url 'home' %}">Home</a></li>
+                             <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+
+                        <ul class="mobile-menu clearfix">
+
+                            <li class="current dropdown"><a href="{%url 'home' %}">Home</a>
+
+                            </li>
+
+
+
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
+            </section>
+        <!--End slider-section-->
+
+        <!--.video-seciton-->
+        <section class="video-seciton">
+            <div class="container">  
+
+                <div class="row">
+                    
+                    
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="single-item">
+                            <h2>who we <span>are?</span></h2>
+                            <h4>MANNERS DEVELOPMENT FOUNDATION offers the following:</h4>
+
+                            <h4>Daily Arabic and Quranic E-Learning Program (DAQELP)</h4>
+                            <p>DAQELP is a daily Arabic and Quranic program that teaches how to 
+                                read and write Arabic Language and perfect recitation of the Holy
+                                 Quran within a short period of time, even without prior knowledge. 
+                                 The program is well organized to facilitate learning process for
+                                  underprivileged individuals who are either novice or slow Arabic language readers.
+                                   In addition, Arabic alphabets and signs, such as Fatha, Kasroh, Dommah, Sukun,
+                                    Fathatan, Kasrotan, Dommatan, Sukun, Alif Modd, Wao Modd, Yao Modd, 
+                                    and Shaddah are also parts of our priorities. Therefore, we strongly 
+                                    believe that this program will strengthen the participants’ knowledge in 
+                                    reading and understanding Arabic and Qur’an. The MDF is working in collaboration
+                                     with some  Arab countries to bring in competent and professional 
+                                foreign teachers to attain the Mission and Vision of the MDF. </p>
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- video-preview start -->
+                        <div class="video-preview";>
+                            <ul class="v-container text-center">
+                                <li>
+                                    <img src="{% static 'images/slider/1.jpg' %}" alt="" srcset="" class="html5lightbox">
+                                       
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- video-preview end -->
+                    </div>
+
+                </div> 
+
+                <div class="row">
+                    
+                    
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="single-item">
+                           
+
+                            <h4>Educational Programmes</h4>
+                            <p><ul>
+                                <li>Arabic & Quranic Online Learning Program</li>
+                                <li>Computer Training</li>
+                            </ul>
+                            </p>
+                            
+
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- video-preview start -->
+                        <div class="video-preview";>
+                            <ul class="v-container text-center">
+                                <li>
+                                    <img src="{static 'images/slider/1.jpg'}" alt="" srcset="" class="html5lightbox">
+                                       
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- video-preview end -->
+                    </div>
+
+                </div> 
+
+                <div class="row">
+                    
+                    
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="single-item">
+                           
+
+                            <h4>Educational Programmes</h4>
+                            <p><ul>
+                                <li>Arabic & Quranic Online Learning Program</li>
+                                <li>Computer Training</li>
+                            </ul>
+                            </p>
+                            
+
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- video-preview start -->
+                        <div class="video-preview";>
+                            <ul class="v-container text-center">
+                                <li>
+                                    <img src="{% static 'images/gallery/school.jpeg' %}" alt="" srcset="" class="html5lightbox">
+                                       
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- video-preview end -->
+                    </div>
+
+                </div> 
+
+                <div class="row">
+                    
+                    
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="single-item">
+                           
+
+                            <h4>Vocational Studies</h4>
+                            <p> 
+                            <ul>
+                                <li>Tailoring with African picture</li>
+                                <li>Hairdresser & Barbering with pictures for both</li>
+                                <li>Agricultural
+                                    <ul>
+                                        <li>Livestocks</li>
+                                        <li>Fish Production</li>
+                                        <li>Crop farming</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </p>
+                            
+
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- video-preview start -->
+                        <div class="video-preview";>
+                            <ul class="v-container text-center">
+
+                                <li>
+                                    <img src="{% static 'images/gallery/farm.jpeg' %}" alt="" srcset="" class="html5lightbox">
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- video-preview end -->
+                    </div>
+
+                </div> 
+
+                <div class="row">
+                    
+                    
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="single-item">
+                           
+
+                            <h4>Welfare</h4>
+                            <p> 
+                            <ul>
+                                
+                                    <li>Kafalat Aytaam</li>
+                                    <li>Food package & medical palliatives for less privilege.</li>
+                                    <li>Boreholes for deprived Areas</li>
+                                
+                            </ul>
+                            </p>
+                            
+
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- video-preview start -->
+                        <div class="video-preview";>
+                            <ul class="v-container text-center">
+                                <li>
+                                    <img src="{% static 'images/gallery/borehole.jpeg'%}" alt="" srcset="" class="html5lightbox">
+                                    
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- video-preview end -->
+                    </div>
+                    
+                </div> 
+
+            </div>
+        </section>
+        <!--/video-seciton-->
+
+        <!--.team-seciton-->
+        <section class="team-seciton pad-top">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>dadicated <span>team</span></h2>
+                    <p>Below are current Board of Directors and members who are
+                         actively involved in this movement</p>
+                </div>
+                <div class="row">
+                    <div class="teamcarosule">
+                        <div class="team-item">
+                                <!-- Start single-item -->
+                                <div class="single-item wow fadeInUp">
+                                    <div class="img-holder">
+                                       <figure><a href="team.html"><img src="{% static 'images/team/founder.png'%}" alt="Images"></a></figure>
+                                        <!-- Start overlay -->
+                                        <div class="overlay">
+                                            <div class="link-icon">
+                                                <ul class="link">
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End overlay -->
+                                    </div>
+                                    <div class="text">
+                                        <h4><a href="{url 'team' }"> Sheik Muyideen Alhashimi</a></h4>
+                                        <p>( President/Founder/ chairman of MDF)</p>
+                                        <p id="arabic-text" style="text-align: right" >الشيخ محي الدين الهاشمي</p>
+                                    </div>
+                                </div>
+                                <!-- End single-item -->
+                            </div>
+                            <div class="team-item">
+                                <!-- Start single-item -->
+                                <div class="single-item wow fadeInUp">
+                                    <div class="img-holder">
+                                       <figure><a href="{%static 'team' %}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
+                                        <!-- Start overlay -->
+                                        <div class="overlay">
+                                            <div class="link-icon">
+                                                <ul class="link">
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End overlay -->
+                                    </div>
+                                    <div class="text">
+                                        <h4><a href="team.html"> Prof. Amidu Sanni</a></h4>
+                                        <p>(Vice- Chancellor Fountain University)</p>
+                                        <p id="arabic-text" style="text-align: right">بروفيسور حامدو ثاني (مدير جامعة الفونتين)</p>
+                                    </div>
+                                </div>
+                                <!-- End single-item -->
+                            </div>
+                            <div class="team-item">
+                                <!-- Start single-item -->
+                                <div class="single-item wow fadeInUp">
+                                    <div class="img-holder">
+                                        <figure><a href="{%static 'team' %}"><img src="{% static 'images/team/3.jpg'%}" alt="Images"></a></figure>
+                                        <!-- Start overlay -->
+                                        <div class="overlay">
+                                            <div class="link-icon">
+                                                <ul class="link">
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End overlay -->
+                                    </div>
+                                    <div class="text">
+                                        <h4><a href="team.html"> HRH Mallam Ibrahim D. Sheshimbwa</a></h4>
+                                        <p>( The Madaki of Kyankpa)</p>
+                                        <p id="arabic-text" style="text-align: right">الشيخ إبراهيم دا. شيشيمبوا ( حاكم محافظة ينبا)</p>
+                                    </div>
+                                </div>
+                                <!-- End single-item -->
+                            </div>
+                            <div class="team-item">
+                                <!-- Start single-item -->
+                                <div class="single-item wow fadeInUp">
+                                    <div class="img-holder">
+                                        <figure><a href="{%static 'team' %}"><img src="{% static 'images/team/4.jpg'%}" alt="Images"></a></figure>
+                                        <!-- Start overlay -->
+                                        <div class="overlay">
+                                            <div class="link-icon">
+                                                <ul class="link">
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End overlay -->
+                                    </div>
+                                    <div class="text">
+                                        <h4><a href="team.html"> Assistant  Prof. Dr. Tijani Ahmad Ashimi</a></h4>
+                                        <p>( International Islamic university Malaysia)</p>
+                                        <p id="arabic-text" style="text-align: right">مساعد بروفيسور ، د. تجاني أحمد هاشمي (محاضر في جامعة الإسلامية العالمية بماليزيا)</p>
+                                    </div>
+                                </div>
+                                <!-- End single-item -->
+                            </div>
+                        </div>    
+                    </div>
+            </div>
+        </section>
+        <!--/team-seciton-->
+
+
+            <!--.CEO-seciton-->
+            <section class="video-seciton">
+                <div class="container">  
+    
+                    <div class="row">
+                       
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!-- Start single-item -->
+                            <div class="single-item">
+                                <h2>About <span>CEO</span></h2>
+                                <h4>Sheik Muyideen Alhashimi</h4>
+                                <p>Born on the 23rd of January an apostle of change, a revolutionary of 
+                                    our time and a highly focused personality in administering people. 
+                                    He is a quintessence of humility, an apostle of change, a revolutionary 
+                                    of our time and a highly focused personality in administering people. 
+                                    Exceptional in diligently reshaping today for a brighter tomorrow while 
+                                    taking clue from the past. An ardent believer in training his subordinates 
+                                    and assigning them responsibilities through effective delegation for the creation of an incorruptible,
+                                     efficient, resilient and responsive service system.
+                                     <br>
+                                      </p>
+
+                                      <p>
+                                        
+                                     The name is as simple as the bearer himself. He is known, called and addressed as Alhaji Muyideen.
+                                     Born in Saki, Oyo state on 23rd of January 1959, he completed his early education at the Idara 
+                                     Primary School, Idara in Bukina Faso. He proceeded to the then Islamic University of Imam 
+                                     Muhammad Ibn Saud Secondary School, now Saudi Islamic Secondary School, Riyadh,
+                                     Saudi Arabic where his immense talents in Arabian language and
+                                     culture became apparent within a very short spell of time.
+                                     He bagged his Bachelor of Art (BA) Degree in Mass Communication from the prestigious 
+                                     United Arab Emirates University, Abu Dhabi, UAE in 1987 and a Master of Art (MA) 
+                                     in Arabic Language and Culture from Lagos State University in 2005. <br>
+                                      </p>
+
+                                      <p>
+                                        MUYIDEEN A. ASHIMI
+                                        has also worked with home and	away	organization	and currently		
+                                        Chairman	and Founder			of			Manners Development				
+                                        Foundation (http://mannersfoundation.org) (NGO),	well		
+                                        registered		in which is partnering with 
+                                        United Arab Emirate to support the Internal Displaced Person (IDP) with some gadget 
+                                        and mobile Ambulance in Nigeria.</p>
+
+                                <h4>Contact Info</h4>
+                                <p><strong>Adress: </strong> 24, Matadi Street, Wuse Zone 3, Abuja, Federal Capital Territory</p>
+                                <p><strong>Phone Numbers: </strong> </p>
+                                <ul>
+                                    <li>+2348033083888 (Nigeria)</li>
+                                    <li>+96551054212 (Kuwait)</li>
+                                    <li>+966544624553(Saudi Arabia)</li>
+                                    <li>+971528695414 (UAE)</li>
+                                    <li>+97433288067 (Qatar)</li>
+                                </ul>
+                            </div>
+                            <!-- End single-item -->
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!-- video-preview start -->
+                            <div class="video-preview";>
+                                <ul class="v-container text-center">
+                                    <li>
+                                        <img src="{% static 'images/team/founder.png' %}" alt="" srcset="" class="html5lightbox">
+                                           
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <!-- video-preview end -->
+                            
+                        </div>
+    
+                    </div> 
+    
+                    <br>
+    
+                </div>
+            </section>
+            <!--/CEO-seciton--> .
+
+        
+{% include "footer.html" %}html>

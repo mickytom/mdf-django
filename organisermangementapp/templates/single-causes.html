@@ -1,0 +1,423 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title> MDF </title>
+    <!-- Stylesheets -->
+
+
+	<!-- jquery -->
+	<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href='{% static "stylescss/responsive.css" %}'>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    	<link rel="stylesheet" href='{% static "styles/bootstrap.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/style.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/revolution-slider.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/animate.css" %}'>
+        <link rel="stylesheet" href='{% static "styles/font-awesome.css" %}'>
+         <link rel="stylesheet" href='{% static "styles/owl.css" %}'>
+          <link rel="stylesheet" href='{% static "styles/responsive.css" %}'>
+
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+
+        <!-- Preloader --> 
+        <div class="preloader"></div>
+
+        <!--Header top area-->
+        <header class="main-header header-style-one">
+            <section class="header-top">
+                <div class="container">  
+                    <div class="header">
+                        <div class="header-top-left">
+                            <ul>
+                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                        </div>
+                        <div class="header-top-right">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> mannersdevelopementfoundation@gmail.com</a></li>
+                                <li><p><i class="fa fa-phone" aria-hidden="true"></i>+234-803 3083 888, +234-809 2211 445</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/header_top_area-->
+
+            <!--/Header Top-->
+                   <section class="mainmenu-area">
+                <div class="container">
+                 <div class="logo pull-left">
+                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li ><a href="{% url 'home'%}">Home</a></li>
+                            <li class="current dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                              <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+
+
+
+                        </ul>
+                        <ul class="mobile-menu clearfix">
+
+                            <li class="current dropdown"><a href="index.html">Home</a></li>
+                            <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                        <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                </div>
+            </section>
+            <!--Main-Mane-->
+            <section class="bounce-in-header">
+                <div class="container">
+                 <div class="logo pull-left">
+                    <a href="{% url 'home' %}"><img src="{%static 'images/logo.png'%}"  alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown"><a href="{% url 'home' %}">Home</a></li>
+                             <li class="dropdown"><a href="causes.html">Activities</a>
+                                <ul>
+                                    <li><a href="{%url 'post_onlinelearning' %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+
+                        <ul class="mobile-menu clearfix">
+
+                            <li class="current dropdown"><a href="{%url 'home' %}">Home</a>
+
+                            </li>
+
+
+
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
+            </section>
+            <!--Main-Mane-->
+            <section class="bounce-in-header">
+                <div class="container">
+                 <div class="logo pull-left">
+                    <a href="{% url 'home' %}"><img src="{static/images/logo.png}" alt=""></a>
+                </div>
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+
+                            <li class="current dropdown"><a href="#">Activities</a>
+                                <ul>
+                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                        <ul class="mobile-menu clearfix">
+
+                            <li><a href="index.html">Home</a></li>
+                            <li class="current dropdown"><a href="#">Activities</a>
+                                <ul>
+                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
+                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="ramadan.html">Ramadan Program</a></li>
+                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
+                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
+            </section>
+            <!--/Main-Menu-->
+        </header>
+        <!--Start slider-section-->
+
+        <section class="slider-section" style="background-image:url(static/images/gallery/background.jpeg);">
+            <div class="container">
+                <div class="slider">
+                    <div class="text team-light">
+                        <h2>our <span>recent </span> Activities</h2>
+                        <p><a href="index.html">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> Activities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End slider-section-->
+        {% for post in posts %}
+        <!--.welcome-seciton-->
+        <section class="welcome-seciton page-causes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <!-- Start single-item -->
+                        <div class="causes-item">
+                            <div class="img-holder">
+                               <figure><img src="{{post.imageURL}}" alt="Images"></figure>
+                                <h5><i class="fa fa-user" aria-hidden="true"></i>By <span>{{post.writer_name}} </span></h5>
+                                <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Cause in <span> Rohingya</span></h5>
+                            </div>
+                            <div class="text text-bg clearfix">
+                                <h2>help rohingya child for food!</h2>
+                                
+                                <p>{{post.article }}</p>
+                            </div>
+
+                         
+                            
+                        </div>
+                        <!-- End single-item -->
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <!-- Start side-bar -->
+                        <div class="side-bar">
+
+                        <!-- Eind side-bar -->
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <!-- Start single-item -->
+                    <div class="welcome-item">
+                        <div class="img-holder">
+                           <figure><img  src="{{post.image1}}" alt="Images"></a></figure>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- End single-item -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <!-- Start single-item -->
+                    <div class="welcome-item">
+                        <div class="img-holder">
+                           <figure><img  src="{{post.image2}}" alt="Images"></figure>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- End single-item -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <!-- Start single-item -->
+                    <div class="welcome-item">
+                        <div class="img-holder">
+                           <figure><img  src="{{post.image3}}" alt="Images"></figure>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- End single-item -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <!-- Start single-item -->
+                    <div class="welcome-item">
+                        <div class="img-holder">
+                           <figure><img src="{{post.image4}}"  alt="Images"></figure>
+                           
+                        </div>
+                        
+                    </div>
+                    <!-- End single-item -->
+                    
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="row top">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+    
+                <div class="video-preview">
+                    <div class="v-container">
+                        <iframe width="420" height="315" src="{{post.youtube_link}}">
+                        </iframe>
+                    </div>
+
+            </div>
+            </div>
+        </div>
+
+        </section>
+        {% endfor %}
+        <!--/wellcome-seciton-->
+
+
+        <!--.footer-section-->
+        <footer class="footer-section widget">
+            <div class="container ">
+                
+                    <div class="footer-item">
+                        
+                        
+                            
+                                <h2>Information</h2>
+                                
+                                <h5><i class="fa fa-map-marker" aria-hidden="true"></i> No.24 Matadi Street, Zone 3 , Wuse.Abuja  </h5>
+                                <h5><i class="fa fa-map-marker" aria-hidden="true"></i> No.89, Randle Avenue Surulere. Lagos.  </h5>
+                                <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>mannersdevelopementfoundation@gmail.com</h5>
+                                <h5><i class="fa fa-phone" aria-hidden="true"></i>+234-8033083888, +234-8092211445</h5>
+                            
+                        
+
+                        
+                    </div>
+                
+            </div>
+        <div class="footer-bottom">
+            <p><span><a target="_blank" href="{url 'home' }">Manners Development Foundation</a></span> </p>
+        </div>
+    </footer>
+    <!--/footer-section-->
+
+    </div>
+    <!--Page Wrapper End-->
+
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'js/isotope.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/html5lightbox/html5lightbox.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/validate.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/revolution.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
