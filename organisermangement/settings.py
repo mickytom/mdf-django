@@ -57,7 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'organisermangement.urls'
-CSRF_TRUSTED_ORIGINS =['www.mdf.com.ng','https://mdf-django-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://www.mdf.com.ng','https://mdf-django-production.up.railway.app',]
 
 TEMPLATES = [
     {
