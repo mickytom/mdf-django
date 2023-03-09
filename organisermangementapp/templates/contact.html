@@ -38,18 +38,17 @@
 
 
 </head>
-
 <body>
     <!--Page Wrapper-->
     <div class="page-wrapper">
 
-        <!-- Preloader --> 
+        <!-- Preloader -->
         <div class="preloader"></div>
 
         <!--Header top area-->
         <header class="main-header header-style-one">
             <section class="header-top">
-                <div class="container">  
+                <div class="container">
                     <div class="header">
                         <div class="header-top-left">
                             <ul>
@@ -71,10 +70,10 @@
             <!--/header_top_area-->
 
             <!--/Header Top-->
-             <section class="mainmenu-area">
+            <section class="mainmenu-area">
                 <div class="container">
                  <div class="logo pull-left">
-                    <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt=""></a>
+                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
                 </div>
                 <nav class="main-menu pull-left">
                     <div class="navbar-header">
@@ -88,41 +87,41 @@
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
                             <li ><a href="{% url 'home'%}">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
+                            <li class="dropdown"><a href="#">Activities</a>
                                 <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li class="current dropdown"><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                               <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'team' %}">Team</a></li>
-                            <li class="current dropdown" ><a href="{% url 'contact' %}">Contact</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
 
 
 
                         </ul>
                         <ul class="mobile-menu clearfix">
 
-                            <li ><a href="{url 'home'}">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                            <li ><a href="{%url 'home'%">Home</a></li>
+                            <li class="dropdown"><a href="#">Activities</a>
+                                 <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li class="current dropdown"><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                         <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'team' %}">Team</a></li>
-                            <li class="current dropdown" ><a href="{% url 'contact' %}">Contact</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -148,24 +147,24 @@
                         <ul class="navigation clearfix">
                             <li ><a href="{% url 'home' %}">Home</a></li>
                              <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                  <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li class="current dropdown"><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                             <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'team' %}">Team</a></li>
-                            <li class="current dropdown" ><a href="{% url 'contact' %}">Contact</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
 
                         <ul class="mobile-menu clearfix">
 
-                            <li ><a href="{%url 'home' %}">Home</a>
+                            <li class="current dropdown"><a href="{%url 'home' %}">Home</a>
 
                             </li>
 
@@ -174,74 +173,7 @@
                             <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'team' %}">Team</a></li>
-                            <li class="current dropdown"><a href="{% url 'contact' %}">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                </div>
-            </section>
-            <!--Main-Mane-->
-            <section class="bounce-in-header">
-                <div class="container">
-                 <div class="logo pull-left">
-                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
-                </div>
-                <nav class="main-menu pull-left">
-                    <div class="navbar-header">     
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li ><a href="{%url 'home'%}">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
-                                </ul>
-                            </li>
-
-                             <li><a href="{% url 'gallery'%}">Gallery</a></li>
-                           <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'team' %}">Team</a></li>
-                            <li class="current dropdown"><a href="{% url 'contact'%}">Contact</a></li>
-                              <li ><a href="{% url 'home'%}">Home</a></li>
-
-
-                        </ul>
-
-                        <ul class="mobile-menu clearfix">
-
-                            <li><a href="{%url 'home'%}">Home</a>
-                            
-                            </li>
-
-                            
-                            <li class=" dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
-                                </ul>
-                            </li>
-
-
-                              <li><a href="{% url 'gallery'%}">Gallery</a></li>
-                           <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'team' %}">Team</a></li>
-                            <li class="current dropdown"><a href="{% url 'contact'%}">Contact</a></li>
-                              <li ><a href="{% url 'home'%}">Home</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
                 </nav>

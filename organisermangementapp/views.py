@@ -15,10 +15,7 @@ def about(request):
     context = {}
     return render(request, 'about.html', context)
 
-def agriculture(request,):
-    post = Blogposter.objects.filter(category__category=pk)
-    context = {'post': post, }
-    return render(request, 'agriculture.html', context)
+
 
 def blog(request):
     context = {}
@@ -40,17 +37,24 @@ def gallery(request):
     context = {}
     return render(request, 'gallery.html', context)
 
-def hair(request,pk):
+def hair(request ):
+    pk = "Hairdressing_&_barbing"
     post = Blogposter.objects.filter(category__category=pk)
     context = {'post': post, }
-    context = {}
+
     return render(request, 'hair.html', context)
+
+def agriculture(request):
+    pk ="agriculture_livestock_&_farming"
+    post = Blogposter.objects.filter(category__category=pk)
+    context = {'post': post, }
+    return render(request, 'agriculture.html', context)
 
 def hold(request):
     context = {}
     return render(request, 'hold.html', context)
 
-def mdfprojects(request,):
+def mdfprojects(request):
     pk = 'mdf_projects'
     post = Blogposter.objects.filter(category__category=pk)
     context = {'post': post, }
@@ -63,11 +67,14 @@ def onlinelearning(request):
     return render(request, 'onlinelearning.html', context)
 
 def outreach(request,):
+    pk = 'community_outreach_by_mdf'
+
     post = Blogposter.objects.filter(category__category=pk)
     context = {'post': post, }
     return render(request, 'outreach.html', context)
 
-def ramadan(request,pk):
+def ramadan(request):
+    pk = 'ramadan_program'
     post = Blogposter.objects.filter(category__category=pk)
     context = {'post': post, }
     return render(request, 'ramadan.html', context)
@@ -82,5 +89,6 @@ def singleEvent(request):
     return render(request, 'single-event.html', context)
 
 def team(request):
-    context = {}
+    posts = Team.objects.all()
+    context = {'posts': posts, }
     return render(request, 'team.html', context)

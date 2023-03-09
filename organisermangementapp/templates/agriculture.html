@@ -49,7 +49,7 @@
         <!--Header top area-->
         <header class="main-header header-style-one">
             <section class="header-top">
-                <div class="container">  
+                <div class="container">
                     <div class="header">
                         <div class="header-top-left">
                             <ul>
@@ -74,10 +74,10 @@
             <section class="mainmenu-area">
                 <div class="container">
                  <div class="logo pull-left">
-                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
                 </div>
                 <nav class="main-menu pull-left">
-                    <div class="navbar-header">     
+                    <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -87,52 +87,55 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="current dropdown"><a href="causes.html">Activities</a>
+                            <li class="current dropdown"><a href="{% url 'home'%}">Home</a></li>
+                            <li class="dropdown"><a href="#">Activities</a>
                                 <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="team.html">Team</a></li>                            
-                            <li><a href="contact.html">Contact</a></li>
+                              <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
+
+
+
                         </ul>
                         <ul class="mobile-menu clearfix">
 
-                            <li><a href="index.html">Home</a></li>
-                            <li class="current dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                            <li class="current dropdown"><a href="index.html">Home</a></li>
+                            <li class="dropdown"><a href="causes.html">Activities</a>
+                                 <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="team.html">Team</a></li>                            
-                            <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
-                   
+
                 </div>
             </section>
             <!--Main-Mane-->
             <section class="bounce-in-header">
                 <div class="container">
                  <div class="logo pull-left">
-                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <a href="index.html"><img src="{%static 'images/logo.png'%}"  alt=""></a>
                 </div>
-            <nav class="main-menu pull-left">
+                <nav class="main-menu pull-left">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -144,38 +147,34 @@
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
                             <li class="current dropdown"><a href="{% url 'home' %}">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="{% url 'home' %}">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                             <li class="dropdown"><a href="causes.html">Activities</a>
+                                  <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                             <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'team' %}">Team</a></li>
-                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
+
                         <ul class="mobile-menu clearfix">
 
-                            <li class="current dropdown"><a href="index.html">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
-                                </ul>
+                            <li class="current dropdown"><a href="{%url 'home' %}">Home</a>
+
                             </li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+
+
+
+                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
+                            <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -183,201 +182,51 @@
             </section>
             <!--/Main-Menu-->
         </header>
-        <!--Start slider-section-->
-        <section class="slider-section" style="background-image:url(images/gallery/background.jpeg);">
-            <div class="container">
-                <div class="slider">
-                    <div class="text team-light">
-                        <h2><span>Agricultural</span> Activities</h2>
-                        <p><a href="index.html">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> Activities</p>
-                    </div>
-                </div>
-            </div>
-        </section> 
-        <!--End slider-section-->
         <!--.welcome-seciton-->
         <section class="welcome-seciton page-causes">
             <div class="container">
                 <div class="row">
+                         {% for posts in post %}
+                    <a href="{% url 'agriculture_post' posts.id %}">
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <!-- Start single-item -->
-                        <div class="welcome-item hvr-float-shadow">
-                            <div class="img-holder">
-                               <figure><a href="single-causes.html"><img src="images/gallery/school.jpeg" alt="Images"></a></figure>
-                                <!-- Start overlay -->
-                                <div class="overlay">
-                                    <h4><a href="single-causes.html">E-Learning Program</span></a></h4> 
-                                </div> 
-                                <!-- End overlay -->
-                            </div>
-                            <div class="text">
-                                <div class="pro-text">
-                                    <h4>Arabic & Quranic Online Learning Program</h4>
-                                    </div>
-                                    <!--.progress-item -->
-                                    <div class="causes-progress">
-                                        <div class="progress-item">
-                                            
-                                        </div>
-                                    </div>
-                                    <!-- /progress-item -->
-                                
-                            </div>
-                        </div>
-                        <!-- End single-item -->
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <!-- Start single-item -->
-                        <div class="welcome-item hvr-float-shadow">
-                            <div class="img-holder">
-                               <figure><a href="single-causes.html"><img src="images/gallery/barb.jpeg" alt="Images"></a></figure>
-                                <!-- Start overlay -->
-                                <div class="overlay">
-                                    <h4><a href="single-causes.html">VOCATIONAL STUDIES</a></h4>
-                                </div>
-                                <!-- End overlay -->
-                            </div>
-                            <div class="text">
-                                <div class="pro-text">
-                                    
-                                    <h4>Hairdressing & Barbing </h4>
 
-                                </div>
-                                    <!--.progress-item -->
-                                    <div class="causes-progress">
-                                        <div class="progress-item">
-                                            
-                                        </div>
-                                    </div>
-                                    <!-- /progress-item -->
-                                
-                                
-                            </div>
-                        </div>
-                        <!-- End single-item -->
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <!-- Start single-item -->
                         <div class="welcome-item hvr-float-shadow">
                             <div class="img-holder">
-                               <figure><a href="single-causes.html"><img src="images/gallery/idp.jpeg" alt="Images"></a></figure>
-                                <!-- Start overlay -->
-                                <div class="overlay">
-                                    <h4><a href="single-causes.html">Agriculture</span></a></h4>
-                                </div>
-                                <!-- End overlay -->
-                            </div>
-                            <div class="text">
-                                <div class="pro-text">
-                                    <h4>Agriculture & livestock Farming</h4>
-                                   
-                                </div>
-                                    <!--.progress-item -->
-                                    <div class="causes-progress">
-                                        <div class="progress-item">
-                                            
-                                        </div>
-                                    </div>
-                                    <!-- /progress-item -->
-                            </div>
-                        </div>
-                        <!-- End single-item -->
-                    </div>
+                               <figure> <img src="{{posts.imageURL}}" alt="Images" /></figure>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <!-- Start single-item -->
-                        <div class="welcome-item hvr-float-shadow">
-                            <div class="img-holder">
-                               <figure><a href="single-causes.html"><img src="images/gallery/borehole1.jpeg" alt="Images"></a></figure>
                                 <!-- Start overlay -->
                                 <div class="overlay">
-                                    <h4><a href="single-causes.html">Welfare</span></a></h4>
+                                    <h4>{{posts.back_ground_img_title }}</span></h4>
                                 </div>
                                 <!-- End overlay -->
                             </div>
                             <div class="text">
                                 <div class="pro-text">
-                                    
-                                    <h4>Ramadan Program</h4>
-                                </div>
+                                    <h4>{{posts.heading }}</h4>
+                                    </div>
                                     <!--.progress-item -->
                                     <div class="causes-progress">
                                         <div class="progress-item">
-                                            
+
                                         </div>
                                     </div>
                                     <!-- /progress-item -->
-                               
+
                             </div>
                         </div>
                         <!-- End single-item -->
+                    </div>
+                        </a>
+                         {% endfor %}
+
                     </div>
 
 
                 </div>
 
 
-                <div class="row">
-                 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <!-- Start single-item -->
-                        <div class="welcome-item hvr-float-shadow">
-                            <div class="img-holder">
-                               <figure><a href="single-causes.html"><img src="images/gallery/borehole1.jpeg" alt="Images"></a></figure>
-                                <!-- Start overlay -->
-                                <div class="overlay">
-                                    <h4><a href="single-causes.html">Outreach Program</span></a></h4>
-                                </div>
-                                <!-- End overlay -->
-                            </div>
-                            <div class="text">
-                                <div class="pro-text">
-                                    
-                                    <h4>Community Outreach by MDF</h4>
-                                </div>
-                                    <!--.progress-item -->
-                                    <div class="causes-progress">
-                                        <div class="progress-item">
-                                            
-                                        </div>
-                                    </div>
-                                    <!-- /progress-item -->
-                               
-                            </div>
-                        </div>
-                        <!-- End single-item -->
-                    </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <!-- Start single-item -->
-                        <div class="welcome-item hvr-float-shadow">
-                            <div class="img-holder">
-                               <figure><a href="single-causes.html"><img src="images/gallery/borehole1.jpeg" alt="Images"></a></figure>
-                                <!-- Start overlay -->
-                                <div class="overlay">
-                                    <h4><a href="single-causes.html">Projects</span></a></h4>
-                                </div>
-                                <!-- End overlay -->
-                            </div>
-                            <div class="text">
-                                <div class="pro-text">
-                                    
-                                    <h4>MDF Projects</h4>
-                                </div>
-                                    <!--.progress-item -->
-                                    <div class="causes-progress">
-                                        <div class="progress-item">
-                                            
-                                        </div>
-                                    </div>
-                                    <!-- /progress-item -->
-                               
-                            </div>
-                        </div>
-                        <!-- End single-item -->
-                    </div>
-
-                </div>
               
                 <div class="page-list">
                     <ul>

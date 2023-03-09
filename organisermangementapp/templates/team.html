@@ -38,18 +38,17 @@
 
 
 </head>
-
 <body>
     <!--Page Wrapper-->
     <div class="page-wrapper">
 
-        <!-- Preloader --> 
+        <!-- Preloader -->
         <div class="preloader"></div>
 
         <!--Header top area-->
         <header class="main-header header-style-one">
             <section class="header-top">
-                <div class="container">  
+                <div class="container">
                     <div class="header">
                         <div class="header-top-left">
                             <ul>
@@ -71,10 +70,10 @@
             <!--/header_top_area-->
 
             <!--/Header Top-->
-             <section class="mainmenu-area">
+            <section class="mainmenu-area">
                 <div class="container">
                  <div class="logo pull-left">
-                    <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt=""></a>
+                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt=""></a>
                 </div>
                 <nav class="main-menu pull-left">
                     <div class="navbar-header">
@@ -87,20 +86,20 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li ><a href="{% url 'home'%}">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
+                            <li class=" dropdown"><a href="{% url 'home'%}">Home</a></li>
+                            <li class=" dropdown"><a href="#">Activities</a>
                                 <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                               <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
-                            <li class="current dropdown"><a href="{% url 'team' %}">Team</a></li>
+                            <li class="current "><a href="{% url 'team' %}">Team</a></li>
                             <li ><a href="{% url 'contact' %}">Contact</a></li>
 
 
@@ -109,75 +108,24 @@
                         <ul class="mobile-menu clearfix">
 
                             <li ><a href="{%url 'home'%}">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
+                            <li class="dropdown"><a href="#">Activities</a>
+                                 <ul>
+                                    <li class="current dropdown"><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                         <li><a href="{% url 'gallery'%}">Gallery</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
-                            <li class="current dropdown"><a href="{% url 'team' %}">Team</a></li>
+                            <li><a href="{% url 'team' %}">Team</a></li>
                             <li ><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
 
-                </div>
-            </section>
-            <!--Main-Mane-->
-            <section class="bounce-in-header">
-                <div class="container">
-                 <div class="logo pull-left">
-                    <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}"  alt=""></a>
-                </div>
-                <nav class="main-menu pull-left">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li><a href="{% url 'home' %}">Home</a></li>
-                             <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="onlinelearning.html">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="mdfprojects.html"> MDF Projects </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
-                            <li><a href="{% url 'about' %}">About</a></li>
-                            <li class="current dropdown"><a href="{% url 'team' %}">Team</a></li>
-                            <li ><a href="{% url 'contact' %}">Contact</a></li>
-                        </ul>
-
-                        <ul class="mobile-menu clearfix">
-
-                            <li ><a href="{%url 'home' %}">Home</a>
-
-                            </li>
-
-
-
-                            <li><a href="{% url 'gallery'%}">Gallery</a></li>
-                            <li><a href="{% url 'about' %}">About</a></li>
-                            <li class="current dropdown"><a href="{% url 'team' %}">Team</a></li>
-                            <li ><a href="{% url 'contact' %}">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
                 </div>
             </section>
             <!--Main-Mane-->
@@ -211,7 +159,7 @@
 
                              <li><a href="{% url 'gallery'%}">Gallery</a></li>
                            <li><a href="{% url 'about' %}">About</a></li>
-                            <li class="current dropdown"><a href="{% url 'team' %}">Team</a></li>
+                            <li class=" dropdown"><a href="{% url 'team' %}">Team</a></li>
                             <li ><a href="{% url 'contact'%}">Contact</a></li>
                               <li ><a href="{% url 'home'%}">Home</a></li>
 
@@ -263,13 +211,14 @@
         <!--.team-seciton-->
         <section class="team-seciton team-page">
             <div class="container">
-                <div class="row"> 
+                  <div class="row">
                     <div class="team-item">
+                        {% for post in posts %}
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <!-- Start single-item -->
                             <div class="single-item wow fadeInUp">
                                 <div class="img-holder">
-                                   <figure><a href="team.html"><img src="{% static 'images/team/founder.png'%}" alt="Images"></a></figure>
+                                    <figure><a href="{%url 'team'%}"><img src="{{post.imageURL}}" alt="Images"></a></figure>
                                     <!-- Start overlay -->
                                     <div class="overlay">
                                         <div class="link-icon">
@@ -289,374 +238,15 @@
                                     <!-- End overlay -->
                                 </div>
                                 <div class="text">
-                                    <h4><a href="team.html"> Sheik Muyideen Alhashimi</a></h4>
-                                    <p>( President/Founder/ chairman of MDF)</p>
-                                    <p id="arabic-text" style="text-align: right" >الشيخ محي الدين الهاشمي</p>
+                                    <h4><a href="team.html"> {{post.name}}</a></h4>
+                                    <p>({{post.position}})</p>
+                                    <p id="arabic-text" style="text-align: right">{{post.arabic}}</p>
                                 </div>
                             </div>
                             <!-- End single-item -->
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
+                        {% endfor %}
 
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html"> Prof. Amidu Sanni</a></h4>
-                                    <p>(Vice- Chancellor Fountain University)</p>
-                                    <p id="arabic-text" style="text-align: right">بروفيسور حامدو ثاني (مدير جامعة الفونتين)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                     <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/3.jpg'%}" alt="Images"></a></figure>
-
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html"> HRH Mallam Ibrahim D. Sheshimbwa</a></h4>
-                                    <p>( The Madaki of Kyankpa)</p>
-                                    <p id="arabic-text" style="text-align: right">الشيخ إبراهيم دا. شيشيمبوا ( حاكم محافظة ينبا)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/4.jpg'%}" alt="Images"></a></figure>
-
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html"> Assistant  Prof. Dr. Tijani Ahmad Ashimi</a></h4>
-                                    <p>( International Islamic university Malaysia)</p>
-                                    <p id="arabic-text" style="text-align: right">مساعد بروفيسور ، د. تجاني أحمد هاشمي (محاضر في جامعة الإسلامية العالمية بماليزيا)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-                    </div>
-                </div>
-                <div class="row"> 
-                    <div class="team-item">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/1.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html"> Dr. Ahmed A. Zik-Rullahi</a></h4>
-                                    <p>(Management Consultant)</p>
-                                    <p id="arabic-text" style="text-align: right">د.أحمد أ. ذكر الله ( شؤون الإدارية)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html">Mss Salehat Abdul Rahaman.</a></h4>
-                                    <p>(Secretary) </p>
-                                    <p id="arabic-text" style="text-align: right"> سيدة صالحة بنت عبدالرحمن (سكرتيرة)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html">Iman Muyideen Ashimi </a></h4>
-                                    <p>(Cordinator)</p>
-                                    <p id="arabic-text" style="text-align: right">ايمان محي الدين الهاشمي (منسقة اعلامي)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                   <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html">Malam. Aliyu .RTD Civil Servant</a></h4>
-                                    <p>( Member)</p>
-                                    <p id="arabic-text" style="text-align: right">مالم. /عليً  متقاعد(عضو)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html">Mr. Sultan. O. Muyideen</a></h4>
-                                    <p>(Member)</p>
-                                    <p id="arabic-text" style="text-align: right">السيد /سلطان أو محي الدين(عضو)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html">Mss.Nabilat A. Ashimi</a></h4>
-                                    <p>(Member)</p>
-                                    <p id="arabic-text" style="text-align: right">الآنسة  /نبيلة أي  هاشمي(عضو)</p>
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-
-                        
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                   <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html"> Mr. Malik Babatunde Kakaako.</a></h4>
-                                    <p>(Member)</p> 
-                                    <p id="arabic-text" style="text-align: right">السيد /سلطان أو محي الدين(عضومالك باباتودى كاكاكو(عضو)</p> 
-                                    
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <!-- Start single-item -->
-                            <div class="single-item wow fadeInUp">
-                                <div class="img-holder">
-                                    <figure><a href="{%url 'team'%}"><img src="{% static 'images/team/2.jpg'%}" alt="Images"></a></figure>
-                                    <!-- Start overlay -->
-                                    <div class="overlay">
-                                        <div class="link-icon">
-                                            <ul class="link">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                               </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End overlay -->
-                                </div>
-                                <div class="text">
-                                    <h4><a href="team.html"> Engr. Isiaka Abdullahi</a></h4>
-                                    <p>(Media Cordinator)</p>
-                                    <p id="arabic-text" style="text-align: right">مهندس/اسحاق عبدالله (مسؤول اعلامي)</p> 
-                                    
-                                </div>
-                            </div>
-                            <!-- End single-item -->
-                        </div>
-
-                        
                         
                     </div>
                 </div>

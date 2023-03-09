@@ -3,6 +3,24 @@ from django.db import models
 # Create your models here.
 from django.db import models
 from django.contrib.auth.models import User
+class Team(models.Model):
+    name = models.CharField(max_length=500)
+    image = models.ImageField(upload_to="images", null=True, blank=True)
+    position = models.CharField(max_length=1000, null=True, blank=True)
+    arabic = models.CharField(max_length=1000, null=True, blank=True)
+
+    def __str__(self):
+        return self. name
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ""
+        return url
+
+
 
 class Activity(models.Model):
     category = models.CharField(max_length=100)

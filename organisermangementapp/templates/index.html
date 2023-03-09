@@ -91,11 +91,11 @@
                             <li class="dropdown"><a href="#">Activities</a>
                                 <ul>
                                     <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                               <li><a href="{% url 'gallery'%}">Gallery</a></li>
@@ -109,14 +109,14 @@
                         <ul class="mobile-menu clearfix">
 
                             <li class="current dropdown"><a href="index.html">Home</a></li>
-                            <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
+                            <li class="dropdown"><a href="#">Activities</a>
+                                 <ul>
                                     <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                         <li><a href="{% url 'gallery'%}">Gallery</a></li>
@@ -147,14 +147,14 @@
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
                             <li class="current dropdown"><a href="{% url 'home' %}">Home</a></li>
-                             <li class="dropdown"><a href="causes.html">Activities</a>
-                                <ul>
-                                    <li><a href="{%url 'post_onlinelearning' %}">Arabic & Quranic Online Learning Program</a></li>
-                                    <li><a href="hair.html"> Hairdressing & Barbing </a></li>
-                                    <li><a href="agriculture.html"> Agriculture & livestock Farming </a></li>
-                                    <li><a href="ramadan.html">Ramadan Program</a></li>
-                                    <li><a href="outreach.html"> Community Outreach by MDF </a></li>
-                                    <li><a href="{%url 'post_mdfprojects' %}"> MDF Projects </a></li>
+                             <li class="dropdown"><a href="#">Activities</a>
+                                  <ul>
+                                    <li><a href="{%url 'post_onlinelearning'  %}">Arabic & Quranic Online Learning Program</a></li>
+                                    <li><a href="{% url 'post_hair'%}"> Hairdressing & Barbing </a></li>
+                                    <li><a href="{% url 'post_agriculture'%}"> Agriculture & livestock Farming </a></li>
+                                    <li><a href="{% url 'post_ramadan'%}">Ramadan Program</a></li>
+                                    <li><a href="{% url 'post_outreach'%}"> Community Outreach by MDF </a></li>
+                                    <li><a href="{% url 'post_mdfprojects' %}"> MDF Projects </a></li>
                                 </ul>
                             </li>
                             <li><a href="{% url 'gallery'%}">Gallery</a></li>
