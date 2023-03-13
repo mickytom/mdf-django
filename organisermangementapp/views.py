@@ -12,7 +12,8 @@ def index(request):
     return render(request, 'index.html', context)
 
 def about(request):
-    context = {}
+    posts = Team.objects.all()
+    context = {'posts': posts, }
     return render(request, 'about.html', context)
 
 
